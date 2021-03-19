@@ -1,0 +1,12 @@
+{
+  "ServerUri": "http://localhost:9000/",
+  "Organization": null,
+  "ProjectKey": "SecSample",
+  "ProjectName": "SecSample",
+  "Profiles": {
+    "CSharp": {
+      "ProfileKey": "AXhGqLFqbepkgETiXHFA",
+      "ProfileTimestamp": "2021-03-18T18:46:03Z"
+    }
+  }
+}

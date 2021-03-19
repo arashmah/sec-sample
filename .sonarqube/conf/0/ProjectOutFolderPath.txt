@@ -1,0 +1,1 @@
+C:\dev\q4\SecSample\.sonarqube\out\0

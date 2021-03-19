@@ -1,0 +1,9 @@
+Y
+NC:\dev\q4\SecSample\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.csutf-8[
+PC:\dev\q4\SecSample\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.csutf-8[
+PC:\dev\q4\SecSample\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.csutf-8]
+RC:\dev\q4\SecSample\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.csutf-8o
+dC:\dev\q4\SecSample\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.csutf-8[
+PC:\dev\q4\SecSample\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.csutf-8Y
+NC:\dev\q4\SecSample\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.csutf-8[
+PC:\dev\q4\SecSample\obj\Debug\netcoreapp3.1\SecSample.RazorTargetAssemblyInfo.csutf-8
