@@ -12,18 +12,18 @@
       },
       "results": [
         {
-          "ruleId": "S108",
+          "ruleId": "S1118",
           "level": "warning",
-          "message": "Either remove or fill this block of code.",
+          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/dev/q4/SecSample/Controllers/HomeController.cs",
+                "uri": "file:///C:/dev/q4/SecSample/Program.cs",
                 "region": {
-                  "startLine": 28,
-                  "startColumn": 13,
-                  "endLine": 30,
-                  "endColumn": 14
+                  "startLine": 13,
+                  "startColumn": 18,
+                  "endLine": 13,
+                  "endColumn": 25
                 }
               }
             }
@@ -41,9 +41,9 @@
               "resultFile": {
                 "uri": "file:///C:/dev/q4/SecSample/Controllers/HomeController.cs",
                 "region": {
-                  "startLine": 11,
+                  "startLine": 13,
                   "startColumn": 50,
-                  "endLine": 11,
+                  "endLine": 13,
                   "endColumn": 57
                 }
               }
@@ -54,18 +54,115 @@
           }
         },
         {
-          "ruleId": "S1118",
+          "ruleId": "S108",
           "level": "warning",
-          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
+          "message": "Either remove or fill this block of code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/dev/q4/SecSample/Controllers/HomeController.cs",
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 13,
+                  "endLine": 36,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S108",
+          "level": "warning",
+          "message": "Either remove or fill this block of code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/dev/q4/SecSample/Controllers/HomeController.cs",
+                "region": {
+                  "startLine": 56,
+                  "startColumn": 19,
+                  "endLine": 56,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4830",
+          "level": "warning",
+          "message": "Enable server certificate validation on this SSL/TLS connection",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///C:/dev/q4/SecSample/Program.cs",
                 "region": {
-                  "startLine": 12,
-                  "startColumn": 18,
-                  "endLine": 12,
-                  "endColumn": 25
+                  "startLine": 18,
+                  "startColumn": 33,
+                  "endLine": 18,
+                  "endColumn": 68
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/dev/q4/SecSample/Program.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 114,
+                  "endLine": 18,
+                  "endColumn": 118
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4036",
+          "level": "warning",
+          "message": "Make sure the \"PATH\" used to find this command includes only what you intend.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/dev/q4/SecSample/Controllers/HomeController.cs",
+                "region": {
+                  "startLine": 46,
+                  "startColumn": 17,
+                  "endLine": 46,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2068",
+          "level": "warning",
+          "message": "\"password\" detected here, make sure this is not a hard-coded credential.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/dev/q4/SecSample/Controllers/HomeController.cs",
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 52,
+                  "endLine": 24,
+                  "endColumn": 136
                 }
               }
             }
@@ -83,10 +180,10 @@
               "resultFile": {
                 "uri": "file:///C:/dev/q4/SecSample/Controllers/HomeController.cs",
                 "region": {
-                  "startLine": 23,
+                  "startLine": 28,
                   "startColumn": 27,
-                  "endLine": 23,
-                  "endColumn": 84
+                  "endLine": 28,
+                  "endColumn": 90
                 }
               }
             }
@@ -104,10 +201,52 @@
               "resultFile": {
                 "uri": "file:///C:/dev/q4/SecSample/Controllers/HomeController.cs",
                 "region": {
-                  "startLine": 27,
+                  "startLine": 56,
                   "startColumn": 13,
-                  "endLine": 30,
+                  "endLine": 56,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2486",
+          "level": "warning",
+          "message": "Handle the exception or explain in a comment why it can be ignored.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/dev/q4/SecSample/Controllers/HomeController.cs",
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 13,
+                  "endLine": 36,
                   "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1481",
+          "level": "warning",
+          "message": "Remove the unused local variable 'results'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/dev/q4/SecSample/Controllers/HomeController.cs",
+                "region": {
+                  "startLine": 52,
+                  "startColumn": 21,
+                  "endLine": 52,
+                  "endColumn": 28
                 }
               }
             }
@@ -152,6 +291,40 @@
             ]
           }
         },
+        "S1481": {
+          "id": "S1481",
+          "shortDescription": "Unused local variables should be removed",
+          "fullDescription": "If a local variable is declared but not used, it is dead code and should be removed. Doing so will improve maintainability because developers will not wonder what the variable is used for.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1481",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S2068": {
+          "id": "S2068",
+          "shortDescription": "Hard-coded credentials are security-sensitive",
+          "fullDescription": "Because it is easy to extract strings from an application source code or binary, credentials should not be hard-coded. This is particularly true for applications that are distributed or that are open-source.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2068",
+          "properties": {
+            "category": "Blocker Security Hotspot",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "NotConfigurable"
+            ]
+          }
+        },
         "S2077": {
           "id": "S2077",
           "shortDescription": "Formatting SQL queries is security-sensitive",
@@ -185,6 +358,23 @@
             ]
           }
         },
+        "S4036": {
+          "id": "S4036",
+          "shortDescription": "Searching OS commands in PATH is security-sensitive",
+          "fullDescription": "When executing an OS command and unless you specify the full path to the executable, then the locations in your application's PATH environment variable will be searched for the executable. That search could leave an opening for an attacker if one of the elements in PATH is a directory under his control. ",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-4036",
+          "properties": {
+            "category": "Minor Security Hotspot",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "NotConfigurable"
+            ]
+          }
+        },
         "S4487": {
           "id": "S4487",
           "shortDescription": "Unread \"private\" fields should be removed",
@@ -200,6 +390,22 @@
               "MainSourceScope",
               "TestSourceScope",
               "Unnecessary"
+            ]
+          }
+        },
+        "S4830": {
+          "id": "S4830",
+          "shortDescription": "Server certificates should be verified during SSL/TLS connections",
+          "fullDescription": "Validation of X.509 certificates is essential to create secure SSL/TLS sessions not vulnerable to man-in-the-middle attacks. ",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-4830",
+          "properties": {
+            "category": "Critical Vulnerability",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope"
             ]
           }
         }

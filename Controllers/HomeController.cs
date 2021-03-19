@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using SecSample.Models;
+using System;
 using System.Data.SqlClient;
 using System.Diagnostics;
+using System.Xml;
 
 namespace SecSample.Controllers
 {
@@ -17,11 +19,15 @@ namespace SecSample.Controllers
 
         public IActionResult Index(string s)
         {
-            // Sql Injection http://projects.webappsec.org/w/page/13246963/SQL%20Injection
             try
             {
-                var cmd = new SqlCommand($"Select * from mytable where name='{s}'");
+                using var conn = new SqlConnection("Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;");
+
+                // Sql Injection http://projects.webappsec.org/w/page/13246963/SQL%20Injection
+
+                var cmd = new SqlCommand($"Select * from mytable where name='{s}'", conn);
                 cmd.ExecuteNonQuery();
+
 
             }
             catch
@@ -34,10 +40,30 @@ namespace SecSample.Controllers
 
         public string Privacy(string myParam)
         {
+            try
+            {
+                var p = new Process();
+                p.StartInfo.FileName = "exportLegacy.exe";
+                p.StartInfo.Arguments = " -user " + myParam + " -role user";
+                p.Start();
+
+                var doc = new XmlDocument { XmlResolver = null };
+                doc.Load("/config.xml");
+                var results = doc.SelectNodes("/Config/Devices/Device[id='" + myParam + "']");
+
+
+            }
+            catch { }
+
             // not XSS
             return "Value " + myParam;
         }
 
+        [HttpPost]
+        public ActionResult ControllerMethod(string input)
+        {
+            return null;
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

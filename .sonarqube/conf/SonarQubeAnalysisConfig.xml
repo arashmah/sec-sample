@@ -100,6 +100,7 @@
     <Property Name="sonar.updatecenter.url">https://update.sonarsource.org/update-center.properties</Property>
     <Property Name="sonar.core.startTime">3/18/2021 2:45:40 PM</Property>
     <Property Name="sonar.core.id">BF41A1F2-AXhGqF2NbepkgETiXDBg</Property>
+    <Property Name="sonar.coverage.exclusions">**/dist/**</Property>
   </ServerSettings>
   <LocalSettings>
     <Property Name="sonar.host.url">http://localhost:9000</Property>
